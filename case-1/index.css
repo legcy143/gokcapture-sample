@@ -98,6 +98,15 @@ nav {
   max-height: 25rem;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .blog-header {
