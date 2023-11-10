@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding-top: 1rem;
 }
@@ -20,7 +20,8 @@ body {
     height: 100dvh;
     overflow-x: hidden;
 }
-nav{
+
+nav {
     padding: 1rem;
     width: 100vw;
     background-color: rgb(75, 213, 75);
@@ -30,9 +31,10 @@ nav{
 
 .main-blog-container {
     margin: auto;
-    width: max(90vw , 11rem);
+    width: max(90vw, 11rem);
     text-wrap: wrap;
     word-wrap: break-word;
+
     h1,
     h2,
     h3,
@@ -74,42 +76,64 @@ nav{
         margin-top: 0;
         margin-bottom: 0.5rem;
     }
-    p{
+
+    p {
         margin: 1rem 0rem;
         font-size: 1rem;
         line-height: 1.9rem;
         color: #747794;
     }
 
-    li{
+    li {
         margin: 1.5rem;
         font-size: 1rem;
         line-height: 1.5rem;
         color: #383737;
     }
-    ul{
+
+    ul {
         list-style: none;
         margin: 1rem 1rem;
         font-size: 1rem;
         line-height: 1.5rem;
         color: #383737;
     }
-    img{
-        margin: auto;
+
+    img {
+        margin: 0.5rem auto;
         display: block;
-        width: max(80%, 10rem);
+        width: max(90%, 10rem);
         max-height: 25rem;
         object-fit: contain;
     }
 }
 
 .blog-header {
-    text-align: center;
-    min-height: 100vh;
-    min-height: 100dvh;
-    h1{
-        margin: 2rem 0rem;
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin: 1rem 0rem;
     }
+}
+
+@media (min-width:750px) {
+    .blog-header {
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            margin: 3rem 0rem 0rem;
+        }
+    }
+
 }
 
 .blog-outline {
@@ -120,8 +144,9 @@ nav{
         display: block;
         text-decoration: none;
     }
-    hr{
-        margin:1rem 0rem;
+
+    hr {
+        margin: 1rem 0rem;
         opacity: 0.5;
     }
 }
