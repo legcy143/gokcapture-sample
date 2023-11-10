@@ -122,15 +122,16 @@ nav {
 
 @media (min-width:750px) {
     .blog-header {
+        margin: 0rem auto;
         min-height: 100vh;
         min-height: 100dvh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        h1 {
-            margin: 3rem 0rem 0rem;
+        gap: 1rem;
+        h1{
+            margin: 0;
         }
     }
 
